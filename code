@@ -1,0 +1,10 @@
+t=int(input())
+
+for i in range(t):
+    try:
+        a,b=input().split()
+        print(int(a)//int(b))  # int divison
+    except ZeroDivisionError as z:  #exception case 
+        print('Error Code:',z)
+    except ValueError as v:
+        print('Error Code:',v)      
